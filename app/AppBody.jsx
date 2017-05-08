@@ -17,13 +17,14 @@ export default class AppBody extends Component {
   render() {
     return (
       <div className="step">
-        <Step stepNumber={4}/>
+        <Step stepNumber={9000}/>
         <Completed
           completed={this.state.completed}
         />
-        {/*<CompleteLink
+        {<CompleteLink
           completed={this.state.completed}
-        />*/}
+          completeStep={this.completeStep}
+        />}
       </div>
     )
   }

@@ -10,16 +10,13 @@ export default class CompleteLink extends Component {
     return (
       <div
         className="complete"
-        onClick={this.completeStep}
+        onClick={this.props.completeStep}
       >
         Click to complete!
       </div>
     )
   }
 
-  completeStep() {
-    console.log('I am clicked!')
-    this.props.completed = true
-  }
+
 }
 
